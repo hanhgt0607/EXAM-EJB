@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul th:each="sale: ${sales}" style="list-style: none">
+    salesmanName: <span th:text="${sale.salesmanName}"></span><br>
+    productId: <span th:text="${sale.product}"></span><br>
+    salesmanID: <span th:text="${sale.salesmanID}"></span><br>
+    DOS: <span th:text="${sale.DOS}"></span><br>
+</ul>
+</body>
+</html>
